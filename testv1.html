@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>CERC ANIMATIONS YAY</title>
+</head>
+    <style>
+        body{
+            background-color: #050210;
+            display: flex;
+            position: relative;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .box {
+      
+            border-radius: 100%;
+            padding: 200px;
+            background: linear-gradient(#fb5dad, #55fb9f, #b97aff);
+            box-shadow: 0 -30px 50px 0 #fb5dad, 30px 0 50px 0 #55fb9f, 0 30px 50px 0 #b97aff, -30px 0 50px green;
+            animation: spin 2s linear infinite;
+        }
+        .boxdoi{
+
+            border-radius: 100%;
+            padding: 160px;
+            background: black;
+            position: absolute;
+            
+        }
+        @keyframes spin {
+             0% { transform: rotate(0deg); }
+             100% { transform: rotate(360deg); }
+        }
+
+    </style>
+<body>
+    <div id="cercul" class="box">
+
+    </div>  
+
+    <div class="boxdoi">
+
+    </div>
+</body>
+</html>
